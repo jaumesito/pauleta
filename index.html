@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>1any</title>
+</head>
+
+<body>
+
+    <div class="heart-container"></div>
+
+    <div class="container" id="primer">
+
+        <header>Formulari</header>
+
+        <div class="line"></div>
+
+        <form id="pform">
+            <input type="text" placeholder="Nom *" required>
+            <input type="text" placeholder="Llinatge *" required>
+            <p id="error-message-nom" class="error-message-nom hidden">No saps escriure es teu nom?</p>
+            <p id="error-message-llin" class="error-message-llin hidden">Esper que no hagis escrit Vidal</p>
+            <button type="submit" class="btn" disabled>Continuar</button>
+        </form>
+
+    </div>
+
+    <div class="container hidden" id="segon">
+
+        <header>Preguntes fàcils</header>
+
+        <form id="sform">
+            <label for="mesos">Quants de mesos duim junts? *</label>
+            <input type="number" name="mesos" id="mesos">
+            <div class="checkbox-container">
+                <label for="est">M'estimes? *</label>
+                <input type="checkbox" name="est" id="est" class="cbx" required>
+            </div>
+            <p id="error-message-mes" class="error-message-mes hidden">No en duim 12?</p>
+            <div class="button-container">
+                <button type="button" id="back-button" class="btnw">Tornar</button>
+                <button type="submit" id="cont" class="btn" disabled>Continuar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container hidden" id="tercer">
+        <div id="foto-container">
+            <img id="foto-dinamica" src="12mesos/0.JPG" width="100%">
+            <video id="video-dinamico" width="100%" controls style="display: none;" loop>
+                <source src="12mesos\4.MP4" type="video/MP4">
+            </video>
+        </div>
+        <input type="range" class="barra" id="barra" min="0" max="12" step="1" value="0">
+        <p id="texto-dinamico">1 ANY</p>
+        <button type="button" id="tornar-inici" class="lst-btn">Tornar a l'inici</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
