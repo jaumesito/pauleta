@@ -1,2 +1,1 @@
-# pauleta
-regalito
+per sa meva nina
